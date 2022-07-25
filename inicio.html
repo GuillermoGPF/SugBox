@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SugBox</title>
+	<link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    	  rel="stylesheet" 
+    	  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    	  crossorigin="anonymous">
+	<link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" 
+		integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" 
+		crossorigin="anonymous" 
+		referrerpolicy="no-referrer" />
+	<link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" 
+		integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" 
+		crossorigin="anonymous" 
+		referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/81c2c05f29.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark">
+
+	<header class="header">
+		<nav>
+			<a class="brand" href="index.html">
+				SugBox
+			</a>
+			<div class="input-group d-none d-lg-flex">
+				<input type="search" 
+					   class="form-control" 
+					   placeholder="Busca aquí..."
+					   aria-describedby="button-addon2">
+				<button class="btn" 
+					  	type="submit" 
+					  	id="button-addon2">
+					<i class="fas fa-search"></i>
+				</button>
+			</div>
+			<div class="profile d-none d-lg-flex" onclick="cuatro()">
+				<div class="icon-photo">
+					<img src="img/img.png">
+				</div>&nbsp;
+				SugBox
+			</div>
+		</nav>
+	</header>
+
+	<aside class="app-menu d-none d-lg-flex" id="menu">
+		<nav>
+			<p onclick="uno()">
+				<i class="fas fa-home"></i>
+				<span>Inicio</span>
+			</p>
+			<p onclick="dos()">
+				<i class="fas fa-envelope-open-text"></i> 
+				<span>Crear buzón</span>
+			</p>
+			<p onclick="tres()">
+				<i class="fas fa-question"></i> 
+				<span>Ayuda</span>
+			</p>
+			<p onclick="cuatro()">
+				<i class="fas fa-user"></i> 
+				<span>Perfil</span>
+			</p>
+			<p onclick="cinco()">
+				<i class="fas fa-mobile-alt"></i>
+				<span>Testers</span>
+			</p>
+			<p onclick="seis()">
+				<i class="fas fa-user-secret"></i>
+				<span>Cliente misterioso</span>
+			</p>
+			<p onclick="siete()">
+				<i class="fas fa-cog"></i> 
+				<span>Configuración</span>
+			</p>
+		</nav>
+	</aside>
+
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="0">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<h3>Inicio</h3>
+				<hr>
+				<h5>Mis buzones</h5>
+				<section class="center slider">
+					<div>
+				    	<a href="">
+				        	<div class="mybox-card">
+					            <div class="mybox-name-card">
+					            	<p>Lista de la compra</p>
+					            	<span>María López</span>
+					            </div>
+				        	</div>
+				        </a>
+					</div>
+					<div>
+				    	<a href="">
+				        	<div class="mybox-card">
+					            <div class="mybox-name-card">
+					            	<p>Materiales</p>
+					            	<span>Ferretería Hnos.Pérez</span>
+					            </div>
+				        	</div>
+				        </a>
+					</div>
+					<div>
+				    	<a href="">
+				        	<div class="mybox-card">
+					            <div class="mybox-name-card">
+					            	<p>Calles y parques para arreglar y mejorar</p>
+					            	<span>Ayuntamiento de Madrid</span>
+					            </div>
+				        	</div>
+				        </a>
+					</div>
+					<div>
+				    	<a href="">
+				        	<div class="mybox-card">
+					            <div class="mybox-name-card">
+					            	<p>¿Qué actividades me sugieres?</p>
+					            	<span>Pedro Gómez</span>
+					            </div>
+				        	</div>
+				        </a>
+					</div>
+					<div>
+				    	<a href="">
+				        	<div class="mybox-card">
+					            <div class="mybox-name-card">
+					            	<p>Dinos tu sugerencia para que mejoremos</p>
+					            	<span>Marketo</span>
+					            </div>
+				        	</div>
+				        </a>
+					</div>
+					<div>
+				    	<a href="">
+				        	<div class="mybox-card">
+					            <div class="mybox-name-card">
+					            	<p>¿Qué mejorarías de nuestro curso?</p>
+					            	<span>Academia Coding</span>
+					            </div>
+				        	</div>
+				        </a>
+					</div>
+				</section>
+				<hr>
+				<h5>Todos los Buzones</h5>
+			    <div class="row grid">
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>Lista de la compra</p>
+				            	<span>María López</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>Materiales</p>
+				            	<span>Ferretería Hnos.Pérez</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>Calles y parques para arreglar y mejorar</p>
+				            	<span>Ayuntamiento de Madrid</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>¿Qué actividades me sugieres?</p>
+				            	<span>Pedro Gómez</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>Dinos tu sugerencia para que mejoremos</p>
+				            	<span>Marketo</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>¿Qué mejorarías de nuestro curso?</p>
+				            	<span>Academia Coding</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>Dime que puedo hacer por tí</p>
+				            	<span>Gimnasio Wellness</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>Cuéntanos que mejorarías o cambiarías de la empresa</p>
+				            	<span>Laberinth</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>Que peli ver, sugerencias</p>
+				            	<span>Alba Gutiérrez</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>¿Qué tipo de comida te gusta?</p>
+				            	<span>Restaurante come&calla</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>¿Salimos? ¿Lugares? ¿Cuándo?</p>
+				            	<span>Eduardo García</span>
+				            </div>
+			        	</div>
+			        </a>
+
+			    	<a href="">
+			        	<div class="box-card">
+				            <div class="name-box-card">
+				            	<p>¿Qué música te gusta escuchar?</p>
+				            	<span>Discoteca Paraíso</span>
+				            </div>
+			        	</div>
+			        </a>
+			    </div>
+			</div>
+			<div class="carousel-item">
+				<h3>Crear buzón</h3>
+				<hr>
+				<div class="row">
+					<div class="col-12 col-sm-9 col-md-8 col-lg-9 mx-auto">
+						<div class="form-card">
+							<form>
+								<div class="row mt-4">
+									<div class="col">
+										<label>Indica el nombre del buzón</label>
+										<input type="text" name="text" placeholder="Nombre del buzón" required>
+									</div>
+								</div>
+
+								<div class="row mt-4">
+									<div class="col">
+										<label>Escribe tu mensaje de bienvenida</label>
+										<textarea type="text" name="message" placeholder="Mensaje: max 92 caracteres" required maxlength="92"></textarea>
+									</div>
+								</div>
+
+								<div class="row mt-4">
+									<div class="col text-center">
+										<button type="button" class="btn mailbox">
+											Crear buzón
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<h3>Ayuda</h3>
+				<hr>
+			</div>
+			<div class="carousel-item">
+				<h3>Perfil</h3>
+				<hr>
+			</div>
+			<div class="carousel-item">
+				<h3>Testers</h3>
+				<hr>
+			</div>
+			<div class="carousel-item">
+				<h3>Cliente misterioso</h3>
+				<hr>
+			</div>
+			<div class="carousel-item">
+				<h3>Configuración</h3>
+				<hr>
+			</div>
+		</div>
+	</div>
+
+	<aside class="ads d-none d-xl-flex"></aside>
+
+    <footer class="app-controls fixed-bottom d-flex d-lg-none">
+		<button onclick="uno()">
+			<i class="fas fa-home"></i>
+		</button>
+		<button onclick="dos()">
+			<i class="fas fa-envelope-open-text"></i> 
+		</button>
+		<button onclick="tres()">
+			<i class="fas fa-question"></i> 
+		</button>
+		<button onclick="cuatro()">
+			<i class="fas fa-user"></i> 
+		</button>
+		<button onclick="cinco()">
+			<i class="fas fa-mobile-alt"></i>
+		</button>
+		<button onclick="seis()">
+			<i class="fas fa-user-secret"></i>
+		</button>
+		<button onclick="siete()">
+			<i class="fas fa-cog"></i> 
+		</button>
+		<button class="search-btn">
+			<i class="fas fa-search"></i>
+		</button>
+	</footer>
+
+    <div class="search-box text-center d-flex d-lg-none">
+		<div class="input-group">
+			<input type="search" 
+				   class="form-control" 
+				   placeholder="Busca aquí lo que necesites..."
+				   aria-describedby="button-addon2">
+			<button class="btn" 
+				  	type="submit" 
+				  	id="button-addon2">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+			crossorigin="anonymous">
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js" 
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+			crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" 
+			integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" 
+			crossorigin="anonymous" 
+			referrerpolicy="no-referrer">
+	</script>
+
+
+    <script type="text/javascript">
+
+    	function uno() {
+    		$('.carousel').carousel(0);
+    	}
+
+    	function dos() {
+    		$('.carousel').carousel(1);
+    	}
+
+    	function tres() {
+    		$('.carousel').carousel(2);
+    	}
+
+    	function cuatro() {
+    		$('.carousel').carousel(3);
+    	}
+
+    	function cinco() {
+    		$('.carousel').carousel(4);
+    	}
+
+    	function seis() {
+    		$('.carousel').carousel(5);
+    	}
+
+    	function siete() {
+    		$('.carousel').carousel(6);
+    	}
+
+    	$(document).ready(function() {
+    		$(".center").slick({
+    			infinite: true,
+    			centerMode: true,
+    			slidesToShow: 4,
+    			responsive: [
+    			{
+    				breakpoint: 1560,
+    				settings: {
+    					centerMode: true,
+    					centerPadding: '40px',
+    					slidesToShow: 3
+    				}
+    			},
+    			{
+    				breakpoint: 1360,
+    				settings: {
+    					centerMode: true,
+    					centerPadding: '40px',
+    					slidesToShow: 2
+    				}
+    			},
+    			{
+    				breakpoint: 1200,
+    				settings: {
+    					centerMode: true,
+    					centerPadding: '15px',
+    					slidesToShow: 3
+    				}
+    			},
+    			{
+    				breakpoint: 992,
+    				settings: {
+    					centerMode: true,
+    					centerPadding: '40px',
+    					slidesToShow: 4
+    				}
+    			},
+    			{
+    				breakpoint: 801,
+    				settings: {
+    					arrows: false,
+    					centerMode: true,
+    					centerPadding: '40px',
+    					slidesToShow: 3
+    				}
+    			},
+    			{
+    				breakpoint: 701,
+    				settings: {
+    					arrows: false,
+    					centerMode: true,
+    					centerPadding: '40px',
+    					slidesToShow: 3
+    				}
+    			},
+    			{
+    				breakpoint: 601,
+    				settings: {
+    					arrows: false,
+    					centerMode: true,
+    					centerPadding: '40px',
+    					slidesToShow: 2
+    				}
+    			},
+    			{
+    				breakpoint: 460,
+    				settings: {
+    					arrows: false,
+    					centerMode: true,
+    					centerPadding: '40px',
+    					slidesToShow: 1
+    				}
+    			}
+    			]
+    		});
+    	});
+		
+		$(document).ready(function() {
+		    // Menu
+		    $('.menu-btn').on('click', function() {
+		        $('.menu-btn').toggleClass('open');
+		        $('.menu').toggleClass('open');
+		    });
+		    $(window).resize(function() {
+		        if ($('.menu-btn').hasClass('open')) {
+		            $('.menu-btn').toggleClass('open');
+		            $('.menu').toggleClass('open');
+		        }
+		    });
+
+		    // Search Menu
+		    $('.search-btn').on('click', function() {
+		    	$('.search-btn').toggleClass('open');
+		    	$('.search-box').toggleClass('open');
+		    });
+		    $(window).resize(function() {
+		        if ($('.search-btn').hasClass('open')) {
+		            $('.search-btn').toggleClass('open');
+		            $('.search-box').toggleClass('open');
+		        }
+		    });
+
+		    // Login Menu
+		    // $('.login-btn').on('click', function() {
+		    // 	$('.login-btn').toggleClass('open');
+		    // 	$('.login-box').toggleClass('open');
+		    // });
+		    // $(window).resize(function() {
+		    //     if ($('.login-btn').hasClass('open')) {
+		    //         $('.login-btn').toggleClass('open');
+		    //         $('.login').toggleClass('open');
+		    //     }
+		    // });
+		});
+
+		let mypics = document.querySelectorAll('.mybox-card');
+        let mypicsSrc = [
+            './img/img1.jpg',
+            './img/img2.jpg',
+            './img/img3.jpg',
+            './img/img4.jpg',
+            './img/img5.png',
+            './img/img6.jpg'
+        ]
+
+        for (i = 0; i < mypics.length; i++) {
+            mypics[i].style.backgroundImage = "url('" + mypicsSrc[i] + "')";
+        }
+
+		let pics = document.querySelectorAll('.box-card');
+        let picsSrc = [
+            './img/img1.jpg',
+            './img/img2.jpg',
+            './img/img3.jpg',
+            './img/img4.jpg',
+            './img/img5.png',
+            './img/img6.jpg',
+            './img/img7.jpg',
+            './img/img8.jpg',
+            './img/img9.jpg',
+            './img/img10.jpg',
+            './img/img11.jpg',
+            './img/img12.png'
+        ]
+
+        for (i = 0; i < pics.length; i++) {
+            pics[i].style.backgroundImage = "url('" + picsSrc[i] + "')";
+        }
+    	
+
+    </script>
+
+</body>
+</html>

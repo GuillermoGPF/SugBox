@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SugBox</title>
+	<link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
+    	  rel="stylesheet" 
+    	  integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
+    	  crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/81c2c05f29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<a class="brand" href="index.html">
+				SugBox
+			</a>
+		</nav>
+		<nav class="d-none d-md-flex">
+			<button class="menu-btn">
+				<i class="fas fa-align-left"></i>
+			</button>
+			<a href="" class="works">
+				<i class="fas fa-mobile-alt"></i>
+				Testers
+			</a>
+			<a href="" class="works">
+				<i class="fas fa-user-secret"></i>
+				Cliente misterioso
+			</a>
+			<div class="input-group d-md-none d-lg-flex">
+				<input type="search" 
+					   class="form-control" 
+					   placeholder="Busca aquí..."
+					   aria-describedby="button-addon2">
+				<button class="btn" 
+					  	type="submit" 
+					  	id="button-addon2">
+					<i class="fas fa-search"></i>
+				</button>
+			</div>
+			<button class="search-btn d-md-flex d-lg-none">
+				<i class="fas fa-search"></i>
+			</button>
+			<div>
+				<button class="btn signin" type="button">
+					<span>Crear</span>
+					<span>cuenta</span>
+				</button>
+				<a href="./inicio.html" class="btn login login-btn" type="button">
+					<span>Iniciar</span>
+					<span>sesión</span>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<aside class="menu">
+		<nav class="row">
+			<div class="col col-6 col-sm-3">
+				<p>
+					Menú
+				</p>
+				<a class="active" href="">
+					Inicio
+				</a>
+				<a href="">
+					Venta
+				</a>
+				<a href="">
+					Alquiler
+				</a>
+				<a href="">
+					Contacto
+				</a>
+			</div>
+			<div class="col col-6 col-sm-3">
+				<p>
+					Menú
+				</p>
+				<a class="active" href="">
+					Inicio
+				</a>
+				<a href="">
+					Venta
+				</a>
+				<a href="">
+					Alquiler
+				</a>
+				<a href="">
+					Contacto
+				</a>
+			</div>
+			<div class="col col-6 col-sm-3">
+				<p>
+					Menú
+				</p>
+				<a class="active" href="">
+					Inicio
+				</a>
+				<a href="">
+					Venta
+				</a>
+				<a href="">
+					Alquiler
+				</a>
+				<a href="">
+					Contacto
+				</a>
+			</div>
+			<div class="col col-6 col-sm-3">
+				<p>
+					Menú
+				</p>
+				<a class="active" href="">
+					Inicio
+				</a>
+				<a href="">
+					Venta
+				</a>
+				<a href="">
+					Alquiler
+				</a>
+				<a href="">
+					Contacto
+				</a>
+			</div>
+		</nav>
+	</aside>
+
+	<div class="hero">
+		<h3>Crear Buzón</h3>
+		<div class="row">
+			<div class="col-12 col-sm-10 col-md-9 col-lg-7 col-xl-6 col-xxl-5 mx-auto">
+				<div class="form-card">
+					<form>
+						<div class="row">
+							<div class="col">
+								<label>Correo electrónico para recibir los mensajes</label>
+								<input type="email" name="email" placeholder="Aquí tu correo electrónico" required autofocus>
+							</div>
+						</div>
+						<div class="row mt-4">
+							<div class="col">
+								<label>Indica el nombre del buzón</label>
+								<input type="text" name="text" placeholder="Nombre del buzón" required>
+							</div>
+						</div>
+
+						<div class="row mt-4">
+							<div class="col">
+								<label>Escribe tu mensaje de bienvenida</label>
+								<textarea type="text" name="message" placeholder="Mensaje: max 92 caracteres" required maxlength="92"></textarea>
+							</div>
+						</div>
+
+						<div class="row mt-4">
+							<div class="col text-center">
+								<button type="button" class="btn mailbox">
+									Crear buzón
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<h3>Buzones</h3>
+	    <div class="row grid">
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>Lista de la compra</p>
+		            	<span>María López</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>Materiales</p>
+		            	<span>Ferretería Hnos.Pérez</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>Calles y parques para arreglar y mejorar</p>
+		            	<span>Ayuntamiento de Madrid</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>¿Qué actividades me sugieres?</p>
+		            	<span>Pedro Gómez</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>Dinos tu sugerencia para que mejoremos</p>
+		            	<span>Marketo</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>¿Qué mejorarías de nuestro curso?</p>
+		            	<span>Academia Coding</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>Dime que puedo hacer por tí</p>
+		            	<span>Gimnasio Wellness</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>Cuéntanos que mejorarías o cambiarías de la empresa</p>
+		            	<span>Laberinth</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>Que peli ver, sugerencias</p>
+		            	<span>Alba Gutiérrez</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>¿Qué tipo de comida te gusta?</p>
+		            	<span>Restaurante come&calla</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>¿Salimos? ¿Lugares? ¿Cuándo?</p>
+		            	<span>Eduardo García</span>
+		            </div>
+	        	</div>
+	        </a>
+
+	    	<a href="">
+	        	<div class="box-card">
+		            <div class="name-box-card">
+		            	<p>¿Qué música te gusta escuchar?</p>
+		            	<span>Discoteca Paraíso</span>
+		            </div>
+	        	</div>
+	        </a>
+	    </div>
+	</div>
+
+    <footer class="footer fixed-bottom py-2">
+    	<a class="navbar-brand" href="">Empresa</a>
+    	<a class="navbar-brand" href="">Legal</a>
+    	<a class="navbar-brand" href="">Privacidad</a>
+    	<a class="navbar-brand" href="">Condiciones</a>
+    	<a class="navbar-brand" href="">Ayuda</a>
+    	<a class="navbar-brand" href="">Contacto</a>
+    </footer>
+
+    <footer class="controls fixed-bottom d-flex d-md-none">
+		<button class="menu-btn">
+			<i class="fas fa-align-left"></i>
+		</button>
+		<a href="" class="works">
+			<i class="fas fa-mobile-alt"></i>
+		</a>
+		<a href="" class="works">
+			<i class="fas fa-user-secret"></i>
+		</a>
+		<button class="search-btn">
+			<i class="fas fa-search"></i>
+		</button>
+		<button class="login-btn">
+			<i class="fas fa-user"></i>
+		</button>
+	</footer>
+
+    <div class="search-box text-center d-flex d-lg-none">
+		<div class="input-group">
+			<input type="search" 
+				   class="form-control" 
+				   placeholder="Busca aquí lo que necesites..."
+				   aria-describedby="button-addon2">
+			<button class="btn" 
+				  	type="submit" 
+				  	id="button-addon2">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+	</div>
+
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.js" 
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+			crossorigin="anonymous"></script>
+    <script type="text/javascript">
+
+    	let body = document.querySelector('body');
+    	body.style.backgroundImage = 'url(img/pic1.png)';
+		
+		$(document).ready(function() {
+		    // Menu
+		    $('.menu-btn').on('click', function() {
+		        $('.menu-btn').toggleClass('open');
+		        $('.menu').toggleClass('open');
+		    });
+		    $(window).resize(function() {
+		        if ($('.menu-btn').hasClass('open')) {
+		            $('.menu-btn').toggleClass('open');
+		            $('.menu').toggleClass('open');
+		        }
+		    });
+
+		    // Search Menu
+		    $('.search-btn').on('click', function() {
+		    	$('.search-btn').toggleClass('open');
+		    	$('.search-box').toggleClass('open');
+		    });
+		    $(window).resize(function() {
+		        if ($('.search-btn').hasClass('open')) {
+		            $('.search-btn').toggleClass('open');
+		            $('.search-box').toggleClass('open');
+		        }
+		    });
+
+		    // Login Menu
+		    // $('.login-btn').on('click', function() {
+		    // 	$('.login-btn').toggleClass('open');
+		    // 	$('.login-box').toggleClass('open');
+		    // });
+		    // $(window).resize(function() {
+		    //     if ($('.login-btn').hasClass('open')) {
+		    //         $('.login-btn').toggleClass('open');
+		    //         $('.login').toggleClass('open');
+		    //     }
+		    // });
+		});
+
+		let pics = document.querySelectorAll('.box-card');
+        let picsSrc = [
+            './img/img1.jpg',
+            './img/img2.jpg',
+            './img/img3.jpg',
+            './img/img4.jpg',
+            './img/img5.png',
+            './img/img6.jpg',
+            './img/img7.jpg',
+            './img/img8.jpg',
+            './img/img9.jpg',
+            './img/img10.jpg',
+            './img/img11.jpg',
+            './img/img12.png'
+        ]
+
+        for (i = 0; i < pics.length; i++) {
+            pics[i].style.backgroundImage = "url('" + picsSrc[i] + "')";
+        }
+    	
+
+    </script>
+
+</body>
+</html>
